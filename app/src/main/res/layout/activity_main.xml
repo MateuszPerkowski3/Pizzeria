@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Konfigurator Pizzy"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Autor: 00000000000"
+        android:textSize="14sp"
+        android:textColor="#555555"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wybierz rozmiar:"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupRozmiar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioMala"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mała 25 zł" />
+
+        <RadioButton
+            android:id="@+id/radioSrednia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Średnia 35 zł"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radioDuza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duża 45 zł" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkGrube"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grube ciasto (+5 zł)"
+        android:layout_marginTop="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Liczba sztuk: " />
+
+        <EditText
+            android:id="@+id/editIlosc"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="1" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnPrzejdz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PRZEJDŹ DO PODSUMOWANIA"
+        android:layout_marginTop="24dp" />
+
+</LinearLayout>
